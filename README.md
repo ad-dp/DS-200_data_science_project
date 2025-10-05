@@ -1,72 +1,122 @@
-Data analysis of the R&D expenditure in India and the Educational perfromance of districts in India.
+# DS200 Assignment: Data Science Visualization Project  
+
+This repository contains two data analysis and visualization projects created as part of the **DS200: Data Science Visualization** assignment.  
+Both projects use datasets from [data.gov.in](https://data.gov.in) and demonstrate **data cleaning, exploratory data analysis (EDA), and visualization** using Python (`pandas`, `matplotlib`, and `seaborn`).
+
+---
+
+## 🔬 Project 1: Analysis of R&D Expenditure by Economic Activity  
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/your_colab_link_here)
+
+### Overview  
+This project analyzes **Research & Development (R&D) expenditure** across various economic sectors in India for the fiscal years **2018–19, 2019–20, and 2020–21**.  
+It identifies key trends, top-spending sectors, and the inequality in national R&D investment.
+
+**Data Source:** [R&D Expenditure by Economic Activity – data.gov.in](https://data.gov.in/)
+
+---
+
+### 📂 Project Structure  
+rd-expenditure-analysis/
+├── rd_analysis_colab.py
+├── rd_bar_chart.png
+├── rd_box_plot.png
+├── rd_scatter_plot.png
+└── readme.md
+
+---
+
+### 📊 Visualizations  
+
+#### Scatter Plot: R&D Expenditure (2018–19 vs. 2019–20)  
+![Scatter Plot](rd_scatter_plot.png)
+
+#### Box Plot: Distribution of R&D Expenditure (2018–2021)  
+![Box Plot](rd_box_plot.png)
+
+#### Bar Chart: Top 10 Sectors by R&D Expenditure (2020–21)  
+![Bar Chart](rd_bar_chart.png)
+
+---
+
+### 🧠 Observations and Inferences  
+
+#### 1. R&D Expenditure (2018–19 vs. 2019–20)
+**Observation:** Most sectors lie close to the *y = x* line with a slight upward drift; one dominant outlier stands out.  
+**Inference:** Overall spending increased between years, with the *Professional, Scientific and Technical Activities* sector dominating.
+
+#### 2. Distribution of R&D Expenditure (2018–2021)
+**Observation:** Data is highly right-skewed, showing a few sectors with very high spending.  
+**Inference:** R&D investment is heavily concentrated in select industries, revealing inequality in innovation funding.
+
+#### 3. Top 10 Sectors by Expenditure (2020–21)
+**Observation:** The *Professional, Scientific and Technical Activities* sector far outspends all others, followed by *Agriculture* and *Health*.  
+**Inference:** National priorities favor scientific and technical R&D, with notable emphasis on agriculture and healthcare.
+
+---
+
+## 🎓 Project 2: Analysis of Indian School Education Performance Data  
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/your_colab_link_here)
+
+### Overview  
+This project performs an **Exploratory Data Analysis (EDA)** of the **Performance Grading Index for Districts (PGI-D 2023–24)** dataset.  
+It visualizes educational performance across districts, grades, and states to uncover relationships among key evaluation categories.
+
+**Data Source:** [Performance Grading Index for Districts (PGI-D 2023–24) – data.gov.in](https://data.gov.in/)
+
+---
+
+### 📂 Project Structure  
+education-performance-analysis/
+├── education_analysis_colab.py
+├── scatter_plot.png
+├── box_plot.png
+├── bar_chart.png
+└── readme.md
 
 
-Project 1: Analysis of R&D Expenditure by Economic Activity
-Project Overview
-This project analyzes the Research & Development (R&D) expenditure across various economic sectors in India for the fiscal years 2018-19, 2019-20, and 2020-21. The goal is to identify trends, top-spending sectors, and the overall distribution of R&D investment.
+---
 
-Data:
-The dataset used is the sector-wise R&D expenditure data for the fiscal years 2018-19, 2019-20, and 2020-21.
+### 📊 Visualizations  
 
-Source: India's Open Government Data (OGD) Platform, data.gov.in
+#### Scatter Plot: Overall Score vs. Outcome Score  
+![Scatter Plot](scatter_plot.png)
 
-Files for this Project
-rd_analysis_colab.py: Python script for analysis.
+#### Box Plot: Overall Score Distribution by Grade  
+![Box Plot](box_plot.png)
 
-rd_scatter_plot.png: Scatter plot comparing 2018-19 and 2019-20 R&D expenditure.
+#### Bar Chart: Top 15 States by Average Overall Score  
+![Bar Chart](bar_chart.png)
 
-rd_box_plot.png: Box plot showing the distribution of expenditure across three years.
+---
 
-rd_bar_chart.png: Bar chart of the top 10 sectors by R&D expenditure in 2020-21.
+### 🧠 Observations and Inferences  
 
-Observations and Analysis from Plots
-1. Scatter Plot: R&D Expenditure (2018-19 vs. 2019-20)
-Observation: Most data points cluster near the y=x reference line, with a significant outlier in the top right. Many points lie slightly above the line, while a few are below it.
+#### 1. Overall vs. Outcome Score  
+**Observation:** Strong positive linear correlation between *Outcome* and *Overall* scores.  
+**Inference:** Districts with better learning outcomes tend to achieve higher overall scores — confirming internal data consistency.
 
-Analysis: The powerful outlier represents the "Professional, Scientific and Technical Activities" sector, which dominates R&D spending. The general trend of points above the line indicates that R&D spending increased for most sectors from 2018-19 to 2019-20. The few points below the line show sectors with decreased spending.
+#### 2. Distribution of Scores by Grade  
+**Observation:** Higher grades (*Uttam*) have higher medians and broader ranges; lower grades (*Prachesta*) cluster at lower scores.  
+**Inference:** Grade classifications effectively represent district-level education performance bands.
 
-2. Box Plot: Distribution of R&D Expenditure (2018-2021)
-Observation: The box plots for all three years are highly skewed, with the median (the line inside the box) very close to the bottom. The whiskers and outlier points extend far upwards, indicating a vast range in spending.
+#### 3. Top States by Average Overall Score  
+**Observation:** *Punjab*, *Chandigarh*, and *Rajasthan* lead with the highest average district scores.  
+**Inference:** These states exhibit strong educational governance and outcomes, though intra-state variation persists.
 
-Analysis: This plot clearly illustrates the massive inequality in R&D spending. A few sectors spend exceptionally large amounts, while the majority of sectors spend very little, pulling the median down. This highlights a concentration of R&D investment in a small number of key areas.
+---
 
-3. Bar Chart: Top 10 Sectors by R&D Expenditure (2020-21)
-Observation: The "Professional, Scientific and Technical Activities" sector's expenditure is dramatically higher than any other sector. "Agriculture, Forestry and Fishing" is a distant second, followed by sectors like "Human Health" and "Electricity, Gas, Steam."
+## 🚀 Getting Started  
 
-Analysis: This chart confirms the dominance of the scientific/technical sector in national R&D efforts. It provides a clear ranking of which areas receive the most investment, which is crucial for understanding national priorities and economic focus.
+### Prerequisites  
+Install the required Python libraries:
+```bash
+pip install pandas matplotlib seaborn
+Running the Analysis
 
-Project 2: Analysis of Indian School Education Performance Data
+Clone the repository and open the Colab notebooks:
 
-This project performs a basic exploratory data analysis (EDA) on the Performance Grading Index for Districts (PGI-D) data for India.
-
-Data
-The dataset used in this analysis is the Performance Grading Index for Districts (PGI-D 2023-24), which assesses the performance of the school education system at the district level. It has the following data about each district: Grade(A name for a range of score), Overall score, and scores under six categories. The categories are: Governance Processes (GP), Digital Learning (DL), School Safety & Child Protection (SS&CP), Infrastructure, Facilities & Student Entitlements (IF&SE), Effective Classroom Transaction (ECT), Learning Outcomes (LO).
-
-
-Source: India's Open Government Data (OGD) Platform, data.gov.in
-
-Files for this Project
-education_analysis_colab.py: The main Python script used for data loading, cleaning, analysis, and visualization in a Google Colab environment.
-
-scatter_plot.png: A scatter plot showing the relationship between 'Overall' scores and 'Outcome' scores.
-
-box_plot.png: A box plot comparing the distribution of 'Overall' scores across different grade categories.
-
-bar_chart.png: A horizontal bar chart displaying the top 15 states by average 'Overall' score.
-
-Observations and Analysis from Plots
-1. Scatter Plot: Overall Score vs. Outcome Score
-Observation: The plot shows a strong, positive, and linear relationship between the 'Overall' score and the 'Outcome' score. As the 'Outcome' score increases, the 'Overall' score increases proportionally.
-
-Analysis: This strong correlation is expected, as the 'Outcome' score is a significant component of the total 'Overall' score. This visualization helps confirm the consistency of the data; a district that performs well in the 'Outcome' category almost always has a high overall score.
-
-2. Box Plot: Distribution of Overall Scores by Grade
-Observation: The distribution of 'Overall' scores varies significantly across the different grade classifications (e.g., 'Uttam', 'Prachesta', 'Akanshi'). Higher-tier grades like 'Uttam-2' and 'Uttam-3' not only have a higher median score but also show a wider range of scores, as indicated by the larger interquartile range (the size of the box). Lower-tier grades like 'Prachesta-3' have lower median scores and are clustered more tightly.
-
-Analysis: This plot effectively segments the performance of districts. The 'Grade' is a reliable indicator of the general performance range. For instance, nearly all 'Uttam' graded districts outperform the 'Prachesta' graded districts. This visualization is excellent for understanding the performance benchmarks associated with each grade.
-
-3. Bar Chart: Top 15 States by Average Overall Score
-Observation: The bar chart highlights that Punjab, Chandigarh, and Rajasthan have the highest average 'Overall' scores across their districts among the states shown. There is a noticeable drop-off in the average score after the top few states.
-
-Analysis: This provides a high-level administrative overview of state-level performance. While it's useful for comparison, it's important to remember that these are averages. A state with a high average score may still have underperforming districts. This chart is a starting point for a more granular, district-level investigation.
-
+git clone https://github.com/<your-username>/ds200-visualization-project.git
+cd ds200-visualization-project
