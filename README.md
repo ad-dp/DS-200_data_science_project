@@ -32,13 +32,13 @@ rd-expenditure-analysis/
 ### Visualizations  
 
 #### Scatter Plot: R&D Expenditure (2018–19 vs. 2019–20)  
-![Scatter Plot](rd_scatter_plot.png)
+![Scatter Plot](scatter_plot.png)
 
 #### Box Plot: Distribution of R&D Expenditure (2018–2021)  
-![Box Plot](rd_box_plot.png)
+![Box Plot](box_plot.png)
 
 #### Bar Chart: Top 10 Sectors by R&D Expenditure (2020–21)  
-![Bar Chart](rd_bar_chart.png)
+![Bar Chart](bar_chart.png)
 
 
 ---
@@ -62,6 +62,7 @@ rd-expenditure-analysis/
 Citations
 
 Government of India. R&D Expenditure by Economic Activity (2018–2021). data.gov.in
+
 
 
 
