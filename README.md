@@ -1,20 +1,14 @@
-Data Science Projects: India Sectoral Analysis
-This repository contains two distinct data analysis projects focusing on different sectors in India. Each project uses Python for exploratory data analysis and visualization.
+Data analysis of the R&D expenditure in India and the Educational perfromance of districts in India.
+
 
 Project 1: Analysis of R&D Expenditure by Economic Activity
 Project Overview
 This project analyzes the Research & Development (R&D) expenditure across various economic sectors in India for the fiscal years 2018-19, 2019-20, and 2020-21. The goal is to identify trends, top-spending sectors, and the overall distribution of R&D investment.
 
-Data Source
-The dataset used is the sector-wise R&D expenditure data.
+Data:
+The dataset used is the sector-wise R&D expenditure data for the fiscal years 2018-19, 2019-20, and 2020-21.
 
-Source: India's Open Government Data (OGD) Platform
-
-Website: data.gov.in
-
-Citation (example format):
-
-Department of Science and Technology, Government of India. (2022). Research & Development Expenditure by Economic Activity. Retrieved from data.gov.in.
+Source: India's Open Government Data (OGD) Platform, data.gov.in
 
 Files for this Project
 rd_analysis_colab.py: Python script for analysis.
@@ -42,21 +36,14 @@ Observation: The "Professional, Scientific and Technical Activities" sector's ex
 Analysis: This chart confirms the dominance of the scientific/technical sector in national R&D efforts. It provides a clear ranking of which areas receive the most investment, which is crucial for understanding national priorities and economic focus.
 
 Project 2: Analysis of Indian School Education Performance Data
-Project Overview
-This project performs a basic exploratory data analysis (EDA) on the Performance Grading Index for Districts (PGI-D) data for India. The goal is to load, clean, and visualize key performance indicators to understand the distribution of educational scores across various states, districts, and grades.
 
-The analysis is conducted using Python with the Pandas library for data manipulation and Matplotlib for generating visualizations.
+This project performs a basic exploratory data analysis (EDA) on the Performance Grading Index for Districts (PGI-D) data for India.
 
-Data Source
-The dataset used in this analysis is the Performance Grading Index for Districts (PGI-D), which assesses the performance of the school education system at the district level.
+Data
+The dataset used in this analysis is the Performance Grading Index for Districts (PGI-D 2023-24), which assesses the performance of the school education system at the district level. It has the following data about each district: Grade(A name for a range of score), Overall score, and scores under six categories. The categories are: Governance Processes (GP), Digital Learning (DL), School Safety & Child Protection (SS&CP), Infrastructure, Facilities & Student Entitlements (IF&SE), Effective Classroom Transaction (ECT), Learning Outcomes (LO).
 
-Source: India's Open Government Data (OGD) Platform
 
-Website: data.gov.in
-
-Citation (example format):
-
-Department of School Education & Literacy, Ministry of Education, Government of India. (2024). Performance Grading Index for Districts (PGI-D). Retrieved from data.gov.in.
+Source: India's Open Government Data (OGD) Platform, data.gov.in
 
 Files for this Project
 education_analysis_colab.py: The main Python script used for data loading, cleaning, analysis, and visualization in a Google Colab environment.
@@ -83,13 +70,3 @@ Observation: The bar chart highlights that Punjab, Chandigarh, and Rajasthan hav
 
 Analysis: This provides a high-level administrative overview of state-level performance. While it's useful for comparison, it's important to remember that these are averages. A state with a high average score may still have underperforming districts. This chart is a starting point for a more granular, district-level investigation.
 
-How to Run the Analysis
-Clone this repository to your local machine.
-
-Open the relevant Python script (rd_analysis_colab.py or education_analysis_colab.py) in a Google Colab notebook.
-
-Upload the source CSV data file to your Colab session.
-
-Update the file_path variable in the script to match the name of your uploaded file.
-
-Run the cells in the notebook to perform the analysis and regenerate the plots.
