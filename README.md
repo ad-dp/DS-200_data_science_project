@@ -16,8 +16,16 @@ It identifies key trends, top-spending sectors, and the inequality in national R
 
 ---
 
-### Project Structure 
-``` rd-expenditure-analysis/ ├── rd_analysis_colab.py ├── rd_bar_chart.png ├── rd_box_plot.png ├── rd_scatter_plot.png └── readme.md ```
+### Project Structure  
+
+```
+rd-expenditure-analysis/
+├── rd_analysis_colab.py
+├── rd_bar_chart.png
+├── rd_box_plot.png
+├── rd_scatter_plot.png
+└── readme.md
+```
 
 ---
 
@@ -53,6 +61,7 @@ It identifies key trends, top-spending sectors, and the inequality in national R
 Citations
 
 Government of India. R&D Expenditure by Economic Activity (2018–2021). data.gov.in
+
 
 
 
