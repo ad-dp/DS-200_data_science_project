@@ -1,11 +1,11 @@
 # DS200 Assignment: Data Science Visualization Project  
 
-This repository contains a data analysis and visualization projects created as part of the **DS200: Data Science Visualization** assignment.  
+This repository contains a data analysis and visualization project created as part of the **DS200: Data Science Visualization** assignment.  
 It use datasets from [data.gov.in](https://data.gov.in) and demonstrate **data cleaning, exploratory data analysis (EDA), and visualization** using Python (`pandas`, `matplotlib`, and `seaborn`).
 
 ---
 
-## 🔬 Project 1: Analysis of R&D Expenditure by Economic Activity  
+## Analysis of R&D Expenditure by Economic Activity  
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1qXXDXvaHxsZlkXd8hXsSXnbWVJEFKYnG?usp=sharing)
 ### Overview  
@@ -16,17 +16,11 @@ It identifies key trends, top-spending sectors, and the inequality in national R
 
 ---
 
-### 📂 Project Structure  
-rd-expenditure-analysis/
-├── rd_analysis_colab.py
-├── rd_bar_chart.png
-├── rd_box_plot.png
-├── rd_scatter_plot.png
-└── readme.md
+### Project Structure ``` rd-expenditure-analysis/ ├── rd_analysis_colab.py ├── rd_bar_chart.png ├── rd_box_plot.png ├── rd_scatter_plot.png └── readme.md ```
 
 ---
 
-### 📊 Visualizations  
+### Visualizations  
 
 #### Scatter Plot: R&D Expenditure (2018–19 vs. 2019–20)  
 ![Scatter Plot](rd_scatter_plot.png)
@@ -39,7 +33,7 @@ rd-expenditure-analysis/
 
 ---
 
-### 🧠 Observations and Inferences  
+### Observations and Inferences  
 
 #### 1. R&D Expenditure (2018–19 vs. 2019–20)
 **Observation:** Most sectors lie close to the *y = x* line with a slight upward drift; one dominant outlier stands out.  
@@ -55,9 +49,10 @@ rd-expenditure-analysis/
 
 ---
 
-📚 Citations
+Citations
 
 Government of India. R&D Expenditure by Economic Activity (2018–2021). data.gov.in
+
 
 
 
